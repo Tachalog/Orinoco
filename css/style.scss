@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+/*----- variable à réutiliser--------------*/
+
+$background-color: #ce7d4b;
+
+/*----------------------------------------*/
+
 body {
     margin: 0;
     padding: 0;
@@ -85,30 +91,44 @@ li a {
 }
 
 .nav-pages a:active {
-    background-color: #ce7d4b;
+    background-color: #e4e4e4;
 }
 
 .nav-pages a:focus, .nav-pages a:hover {
-    box-shadow: 5px 5px #ce7d4b;
+    box-shadow: 5px 5px $background-color;
     transition: 0.5s;
 }
 
 .bkg-color {
-    background-color: #ce7d4b;
+    background-color: $background-color;
     padding: 5px;
     border-radius: 10% 10%;
     color: white;
     border-color: cadetblue;
 }
 
+h2 {
+    margin: 35px;
+}
+
 h3 {
     margin: 15px;
     padding: 5px;
     font-size: 18px;
+    width: fit-content;
+}
+
+a h3:active, a h3:focus, a h3:hover {
+    box-shadow: 5px 5px $background-color;
+    transition: 0.5s;
+}
+
+a h3 {
+    margin: 35px;
 }
 
 p {
-    margin: 5px;
+    margin: 15px;
     padding: 5px;
     font-size: 15px;
     font-style: italic;
@@ -125,6 +145,10 @@ img {
     vertical-align: middle;
     margin: 5px;
     padding: 5px;
+}
+
+.product {
+    margin: 25px;
 }
 
 .furniture img, .teddybear img {

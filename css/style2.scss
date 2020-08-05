@@ -1,0 +1,32 @@
+/* régle d'import des mixns */
+@import "mixin.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+/*----- variable à réutiliser--------------*/
+
+$background-color: #ce7d4b;
+
+/*----------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@include header;
+
+@include img_carrousel;
+
