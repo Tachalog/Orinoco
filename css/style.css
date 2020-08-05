@@ -8,28 +8,35 @@ body {
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: #f3e9f1;
+  font-size: 18px;
+}
+
+.fa-shopping-cart {
+  font-size: 50px;
 }
 
 h1 {
   font-family: 'Merienda One', cursive, Arial, Helvetica, sans-serif;
   color: black;
-  font-size: 24px;
+  font-size: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 25px;
 }
 
-ul {
-  list-style-type: none;
+.navigation {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 h3 {

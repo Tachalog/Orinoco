@@ -7,22 +7,29 @@ body {
     margin: 0;
     padding: 0;
 }
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(243, 233, 241);
+ul {
+    list-style-type: none;
 }
 
+header {
+    background-color: rgb(243, 233, 241);
+    font-size: 18px;
+}
+
+.fa-shopping-cart {
+    font-size: 50px;
+}
 h1 {
     font-family: 'Merienda One', cursive, Arial, Helvetica, sans-serif;
     color: black;
-    font-size: 24px;
+    font-size: 30px;
+    display: inline-flex;
+    padding: 25px;
 }
 
-ul {
-    list-style-type: none;
+.navigation {
+    display: inline-flex;
+    justify-content: space-around;
 }
 
 
