@@ -1,26 +1,69 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   background-color: #f3e9f1;
   font-size: 18px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
+main {
+  margin-top: 150px;
+}
+
+/***** zone pour l'icône du caddie Orinoco et son dégradé de couleur ******/
 .fa-shopping-cart {
   font-size: 50px;
+  padding-left: 10px;
 }
 
+nav.m1 .gradient {
+  font-size: 150%;
+  display: inline-block;
+  position: relative;
+  color: black;
+  background: #fff;
+  mix-blend-mode: multiply;
+}
+
+nav.m1 .gradient:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #ce7d4b, #955eeb);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ce7d4b), to(#955eeb));
+}
+
+nav.m1 .gradient:before {
+  mix-blend-mode: screen;
+}
+
+/************************************************************/
 h1 {
   font-family: 'Merienda One', cursive, Arial, Helvetica, sans-serif;
   color: black;
@@ -29,6 +72,7 @@ h1 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 25px;
+  margin: 15px;
 }
 
 .navigation {
@@ -37,12 +81,50 @@ h1 {
   display: inline-flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-left: 400px;
+}
+
+li a {
+  padding: 0 15px;
+}
+
+.nav-pages a:active {
+  background-color: #ce7d4b;
+}
+
+.nav-pages a:focus, .nav-pages a:hover {
+  -webkit-box-shadow: 5px 5px #ce7d4b;
+          box-shadow: 5px 5px #ce7d4b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.bkg-color {
+  background-color: #ce7d4b;
+  padding: 5px;
+  border-radius: 10% 10%;
+  color: white;
+  border-color: cadetblue;
 }
 
 h3 {
-  margin: 5px;
+  margin: 15px;
   padding: 5px;
   font-size: 18px;
+}
+
+p {
+  margin: 5px;
+  padding: 5px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.fa-shopping-bag {
+  font-size: 30px;
+  padding-left: 5px;
 }
 
 img {
@@ -51,5 +133,10 @@ img {
   vertical-align: middle;
   margin: 5px;
   padding: 5px;
+}
+
+.furniture img, .teddybear img {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
 }
 /*# sourceMappingURL=style.css.map */
