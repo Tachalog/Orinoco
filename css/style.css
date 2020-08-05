@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'Merienda One', cursive, Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 24px;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    list-style: none;
+    width: 50%;
+    height: 50%;
+}
