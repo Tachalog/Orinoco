@@ -1,15 +1,48 @@
-h1 {
-    font-family: 'Merienda One', cursive, Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: 24px;
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-li {
-    list-style: none;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f3e9f1;
+}
+
+h1 {
+  font-family: 'Merienda One', cursive, Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h3 {
+  margin: 5px;
+  padding: 5px;
+  font-size: 18px;
 }
 
 img {
-    list-style: none;
-    width: 50%;
-    height: 50%;
+  width: 10%;
+  height: 10%;
+  vertical-align: middle;
+  margin: 5px;
+  padding: 5px;
 }
+/*# sourceMappingURL=style.css.map */
