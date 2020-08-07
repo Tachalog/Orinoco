@@ -9,6 +9,8 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  max-width: 1200px;
   font-family: Roboto, Arial, sans-serif;
 }
 
@@ -66,6 +68,7 @@ nav.m1 .gradient:before {
 }
 
 /************************************************************/
+/* Menu de navigation *************************************/
 h1 {
   font-family: 'Merienda One', cursive, Arial, Helvetica, sans-serif;
   color: black;
@@ -88,8 +91,8 @@ h1 {
   margin-left: 400px;
 }
 
-li a {
-  padding: 0 15px;
+.nav-pages a {
+  padding: 5px 15px;
 }
 
 .nav-pages a:active {
@@ -103,9 +106,9 @@ li a {
   transition: 0.5s;
 }
 
+/************************************************************/
 .bkg-color {
   background-color: #ce7d4b;
-  padding: 5px;
   border-radius: 10% 10%;
   color: white;
   border-color: cadetblue;
@@ -144,19 +147,26 @@ p {
 
 .fa-shopping-bag {
   font-size: 30px;
-  padding-left: 5px;
+  padding-left: 15px;
 }
 
 img {
-  width: 10%;
-  height: 10%;
+  width: 25%;
+  height: auto;
+  max-width: 100%;
   vertical-align: middle;
   margin: 5px;
   padding: 5px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .product {
   margin: 25px;
+}
+
+.product_list {
+  width: 100%;
 }
 
 .furniture img, .teddybear img {

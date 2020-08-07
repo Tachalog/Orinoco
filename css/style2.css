@@ -22,6 +22,10 @@ a {
   color: black;
 }
 
+.pdt_focus {
+  margin-left: 20px;
+}
+
 header {
   background-color: #f3e9f1;
   font-size: 18px;
@@ -112,8 +116,9 @@ li a {
 }
 
 img {
-  width: 50%;
-  height: 50%;
+  width: 25%;
+  height: auto;
+  max-width: 100%;
   vertical-align: middle;
   margin: 5px;
   padding: 5px;

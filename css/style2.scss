@@ -26,7 +26,13 @@ a {
     color: black;
 }
 
+.pdt_focus {
+    margin-left: 20px;
+}
+
 @include header;
 
 @include img_carrousel;
+
+
 
