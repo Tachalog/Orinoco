@@ -4,7 +4,7 @@
 
 /*----- variable à réutiliser--------------*/
 
-$background-color: #ce7d4b;
+$bkg-colo: #ce7d4b;
 
 /*----------------------------------------*/
 
@@ -90,44 +90,45 @@ h1 {
 
 .nav-pages a {
     padding: 5px 15px;
-}
 
-.nav-pages a:active {
-    background-color: #e4e4e4;
+    &a:active{
+        background-color: #e4e4e4;
+    }
 }
 
 .nav-pages a:focus, .nav-pages a:hover {
-    box-shadow: 5px 5px $background-color;
+    box-shadow: 5px 5px $bkg-colo;
     transition: 0.5s;
 }
 
 /************************************************************/
 
 .bkg-color {
-    background-color: $background-color;
+    background-color: $bkg-color;
     border-radius: 10% 10%;
     color: white;
     border-color: cadetblue;
 }
 
 h2 {
-    margin: 35px;
+    margin: 25px;
+    text-decoration: underline $bkg-color;
 }
 
 h3 {
-    margin: 15px;
+    margin: 10px;
     padding: 5px;
     font-size: 18px;
     width: fit-content;
 }
 
-a h3:active, a h3:focus, a h3:hover {
-    box-shadow: 5px 5px $background-color;
-    transition: 0.5s;
-}
-
 a h3 {
-    margin: 35px;
+    margin: 30px;
+
+    &:active, &:focus, &:hover {
+        box-shadow: 5px 5px $bkg-colo;
+        transition: 0.5s;
+    }
 }
 
 p {
@@ -149,11 +150,14 @@ img {
     vertical-align: middle;
     margin: 5px;
     padding: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     &:hover {
+        transform: scale(0.9);
+    }
 }
 
 .product {
-    margin: 25px;
+    margin: 20px;
 }
 
 .product_list {

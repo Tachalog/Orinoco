@@ -115,11 +115,23 @@ li a {
   border-color: cadetblue;
 }
 
+/*------------- carrousel **********************/
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 30%;
+  background-color: #ce7d4b;
+  overflow: hidden;
+}
+
 img {
-  width: 25%;
-  height: auto;
+  width: 50%;
   max-width: 100%;
-  vertical-align: middle;
   margin: 5px;
   padding: 5px;
 }

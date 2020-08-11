@@ -1,5 +1,9 @@
-/* régle d'import des mixns */
+/* Import des mixns */
 @import "mixin.scss";
+
+
+
+/*****************/
 
 * {
     box-sizing: border-box;
@@ -7,7 +11,7 @@
 
 /*----- variable à réutiliser--------------*/
 
-$background-color: #ce7d4b;
+$bkg-color: #ce7d4b;
 
 /*----------------------------------------*/
 
@@ -32,7 +36,19 @@ a {
 
 @include header;
 
-@include img_carrousel;
+/*------------- carrousel **********************/
+#container {
+    display: flex;
+    flex-direction: row;
+    top: 30%;
+    background-color: $$bkg-colo;
+    overflow: hidden;
+}
 
-
+img {
+    width: 50%;
+    max-width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
 
