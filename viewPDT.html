@@ -19,23 +19,6 @@
 
     <link rel="canonical" href="" />
 
-    <script src="./js/app.js"></script>
-    <script src="./js/packgage.json"></script>
-    <script src="./js/package-lock.json"></script>
-    <script src="./js/server.js"></script>
-
-    <script src="./controllers/camera.js"></script>
-    <script src="./controllers/furniture.js"></script>
-    <script src="./controllers/teddy.js"></script>
-
-    <script src="./models/Camera.js"></script>
-    <script src="./models/Furniture.js"></script>
-    <script src="./models/Teddy.js"></script>
-
-    <script src="./routes/camera.js"></script>
-    <script src="./routes/furniture.js"></script>
-    <script src="./routes/teddy.js"></script>
-
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
@@ -84,41 +67,40 @@
     </header>
 
 <main>
-        
-    <h3 class="pdt_focus">Nos appareils photo</h3>    
 
     <section>
+        <h3 class="pdt_focus">Nos appareils photo</h3>
+   
+        <div id="container">
 
-        <figure id="container">
+            <figure class="scroll-container">
+                <scroll-page id="page-1">
+                    <img src="images/vcam_1.jpg" alt="photo d'un appareil photo vintage de la marque Pronto">
+                </scroll-page>
 
-            <div class="slider">
+                <scroll-page id="page-2">
+                    <img src="images/vcam_2.jpg" alt="photo d'un appareil photo vintage en noir et blanc poser à plat">
+                </scroll-page>
 
-                <div class="elements-img">
+                <scroll-page id="page-3">
+                    <img src="images/vcam_3.jpg" alt="photo d'un appareil photo vintage de la marque Minolta MD Rokkor">
 
-                    <div id="img1">
-                        <img src="images/vcam_1.jpg" alt="photo d'un appareil photo vintage de la marque Pronto">
-                    </div>
+                </scroll-page>
 
-                    <div id="img2">
-                        <img src="images/vcam_2.jpg" alt="photo d'un appareil photo vintage en noir et blanc poser à plat">
-                    </div>
+                <scroll-page id="page-4">
+                    <img src="images/vcam_4.jpg" alt="photo d'un appareil photo vintage de la marque Minolta MD Rokkor">
 
-                    <div id="img3">
-                        <img src="images/vcam_3.jpg" alt="photo d'un appareil photo vintage de la marque Eastman kodak">
-                    </div>
+                </scroll-page>
 
-                    <div id="img4">
-                        <img src="images/vcam_4.jpg" alt="photo d'un appareil photo vintage de la marque Minolta MD Rokkor">
-                    </div>
+                <scroll-page id="page-5">
+                    <img src="images/vcam_5.jpg" alt="photo d'un appareil photo vintage de la marque Samsung">
+                </scroll-page>
+            </figure>
 
-                    <div id="img5">
-                        <img src="images/vcam_5.jpg" alt="photo d'un appareil photo vintage de la marque Samsung">
-                    </div>
-                </div>
-            </div>
-           
-        </figure>
+        </div>
+
     </section>
+
 </main>
 
 </body>

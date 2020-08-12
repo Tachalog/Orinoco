@@ -70,12 +70,12 @@
     }
 
     .nav-pages a:focus, .nav-pages a:hover {
-        box-shadow: 5px 5px $background-color;
+        box-shadow: 5px 5px $bkg-color;
         transition: 0.5s;
     }
 
     .bkg-color {
-        background-color: $background-color;
+        background-color: $bkg-color;
         padding: 5px;
         border-radius: 10% 10%;
         color: white;

@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/* régle d'import des mixns */
+/* Import des mixns */
+/*****************/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -116,23 +117,39 @@ li a {
 }
 
 /*------------- carrousel **********************/
+/*
 #container {
+    display: flex;
+    flex-direction: row;
+    vertical-align: center;
+    justify-content: center;
+    background-color: $bkg-color;
+    width: 550px;
+    padding: 5px;
+    margin-left: 350px;
+    overflow:hidden;
+}   
+*/
+.scroll-container {
+  display: block;
+  width: 550px;
+  height: 300px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+scroll-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  top: 30%;
-  background-color: #ce7d4b;
-  overflow: hidden;
-}
-
-img {
-  width: 50%;
-  max-width: 100%;
-  margin: 5px;
-  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  font-size: 5em;
 }
 /*# sourceMappingURL=style2.css.map */
