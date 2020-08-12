@@ -116,30 +116,18 @@ li a {
   border-color: cadetblue;
 }
 
-/*------------- carrousel **********************/
-/*
-#container {
-    display: flex;
-    flex-direction: row;
-    vertical-align: center;
-    justify-content: center;
-    background-color: $bkg-color;
-    width: 550px;
-    padding: 5px;
-    margin-left: 350px;
-    overflow:hidden;
-}   
-*/
 .scroll-container {
   display: block;
-  width: 550px;
+  width: 500px;
   height: 300px;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  white-space: nowrap;
+  background-color: #ce7d4b;
+  padding-top: 10px;
+  padding-left: 50px;
 }
 
-scroll-page {
+img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,6 +138,12 @@ scroll-page {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  font-size: 5em;
+  padding: 5px;
+}
+
+figcaption {
+  padding: 15px;
+  width: 80%;
+  color: white;
 }
 /*# sourceMappingURL=style2.css.map */
