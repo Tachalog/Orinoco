@@ -68,35 +68,57 @@
 
 <main>
 
-    <section>
+    <section id="camera-choice">
         <h3 class="pdt_focus">Nos appareils photo</h3>
    
         <div id="container">
 
             <figure class="scroll-container">
 
+                <a href="" onclick="javascript=selection.js">
                     <img src="images/vcam_1.jpg" alt="photo d'un appareil photo vintage de la marque Prontor avec une lentille Zeiss Ikon">
                         <figcaption class="text-img">Appareil photo de la marque Prontor avec lentille Zeiss Ikon </figcaption>
+                </a>
 
+                <a href="" onclick="javascript=selection.js">
                     <img src="images/vcam_2.jpg" alt="photo d'un appareil photo vintage en noir et blanc poser à plat">
                         <figcaption class="text-img">Appareil photo vintage </figcaption>
+                </a>
 
+                <a href="" onclick="javascript=selection.js">
                     <img src="images/vcam_3.jpg" alt="photo d'un appareil photo vintage de la marque Eastman Kodak">
                         <figcaption class="text-img">Appareil photo de la marque Eastman Kodak </figcaption>
+                </a>
 
+                <a href="" onclick="javascript=selection.js">
                     <img src="images/vcam_4.jpg" alt="photo d'un appareil photo vintage de la marque Minolta MD Rokkor">
                         <figcaption class="text-img">Appareil photo de la marque MD Rokkor </figcaption>
+                </a>
 
+                <a href="" onclick="javascript=selection.js">
                     <img src="images/vcam_5 (1).jpg" alt="photo d'un appareil photo vintage de la marque Samsung">
                         <figcaption class="text-img">Appareil photo de la marque Samsung </figcaption>
-               
+                </a>
             </figure>
 
+        </div>
+
+        <div id="container-select">
+            <label for ="options">Merci, de choisir votre option de personnalisation:</label>
+
+                <select name="options" id="options">
+                    <option value="">-- Merci de choisir une option --</option>
+                    <option value="lentille">Lentilles</option>
+
+                </select>
         </div>
 
     </section>
 
 </main>
+
+
+<script src="./js/selection.js"></script>
 
 </body>
 
