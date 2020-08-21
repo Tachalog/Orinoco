@@ -8,7 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "bcrypt": "^3.0.8",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
