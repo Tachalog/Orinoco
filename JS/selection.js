@@ -1,13 +1,10 @@
-let selectCam = document.querySelector('input');
 
-selectCam.addEventListener('click', function (e) {
-    e.preventDefault();
-});
-
-selectCam.onchange = function () {
-    if (selectCam.checked) {
-        selectCam.textContent = "Appareil sélectionné";
+function choixArticle() {
+    let checkBox = document.getElementById("cam1");
+    let text = document.getElementById("options");
+    if (checkBox.checked == true) {
+        text.style.display = "block";
     } else {
-        selectCam.textContent = "Merci de sélectionner un produit.";
+        text.style.display = "none";
     }
-};
+}
