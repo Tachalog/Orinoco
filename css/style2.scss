@@ -45,7 +45,6 @@ h2 {
 @include header;
 
 
-
 #container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -62,11 +61,7 @@ img {
     vertical-align: middle;
     margin: 10px 5px;
     padding: 5px;
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    &:hover {
-        transform: scale(1.2)
-    };*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .article {
@@ -74,11 +69,6 @@ img {
     box-shadow: 0 4px 8px 0 rgba(206, 125, 75, 0.2), 0 6px 20px 0 rgba(206, 125, 75, 0.19);
     max-width: 300px;
     text-align: center;
-}
-
-.article:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h3 {
@@ -91,13 +81,11 @@ h3 {
 }
 
 .article button {
-    border: none;
     padding: 12px;
     color: black;
     font-weight: bold;
     background-color:$bkg-color;
     text-align: center;
-    cursor: pointer;
     width: 100%;
     font-size: 18px;
 }

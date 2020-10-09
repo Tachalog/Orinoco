@@ -17,11 +17,3 @@ for (var i = 0; i < btnPanier.length; i++){
 
 
 
-
-
-
-var values = document.querySelectorAll('h3')
-console.log(values);
-
-
-
